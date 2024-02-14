@@ -10,15 +10,16 @@ import EditRestaurant from './Pages/EditRestaurant'
 function App() {
   return (
     <Fragment>
-      <SideBar/>
-       <Navbar/>
+      <SideBar />
+      <Navbar />
       <Routes>
         <Route element={<Revenue />} path="/" />
         <Route element={<RegRestaurant />} path="/reg" />
         <Route element={<EditRestaurant />} path="/edit-restaurant" />
+
       </Routes>
     </Fragment>
-  )
+  );
 }
 
-export default App
+export default App;
