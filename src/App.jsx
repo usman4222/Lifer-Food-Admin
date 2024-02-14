@@ -1,11 +1,11 @@
-import { Fragment } from "react";
-import { Route, Routes } from "react-router-dom";
-import Revenue from "./Pages/Revenue";
-import SideBar from "./Components/SideBar";
-import Navbar from "./Components/Navbar";
-import "./App.css";
-import Reg from "./Pages/Reg";
-import TicketDescription from "./Pages/TicketDescription";
+import { Fragment } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Revenue from './Pages/Revenue'
+import SideBar from './Components/SideBar'
+import Navbar from './Components/Navbar'
+import './App.css'
+import RegRestaurant from './Pages/RegRestaurant'
+import EditRestaurant from './Pages/EditRestaurant'
 
 function App() {
   return (
@@ -14,8 +14,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route element={<Revenue />} path="/" />
-        <Route element={<Reg />} path="/reg" />
-        <Route element={<TicketDescription />} path="/ticketdescription" />
+        <Route element={<RegRestaurant />} path="/reg" />
+        <Route element={<EditRestaurant />} path="/edit-restaurant" />
+
       </Routes>
     </Fragment>
   );
