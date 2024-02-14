@@ -1,42 +1,36 @@
-import { Editor } from "@tinymce/tinymce-react";
-import { useState } from "react";
+import EditorComponent from "../Components/EditorComponent";
 import Wrapper from "../Components/Wrapper";
-const EditorComponent = () => {
-  const [editorContent, setEditorContent] = useState("");
-
-  const saveEditorContent = () => {
-    const content = window.tinymce.activeEditor.getContent();
-    setEditorContent(content);
-  };
-
+import TicketInfo from "../Components/TicketInfo";
+import Head from "../Components/Head";
+const TicketDescription = () => {
   return (
     <Wrapper>
-      <div className="lg:w-[60%] mx-auto mt-20 w-[95%]">
-        <Editor
-          apiKey={import.meta.env.VITE_EDITOR_API_KEY}
-          init={{
-            menubar: false,
-            branding: false,
-            plugins:
-              "anchor autolink charmap codesample emoticons  link lists  searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode   tableofcontents footnotes mergetags autocorrect typography inlinecss",
-            toolbar:
-              "undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link table mergetags | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat",
-          }}
-          initialValue=""
-        />
+      <Head
+        heading={"Ticket Management"}
+        para={"Admin Hub for Restaurant Requests"}
+      />
+      <div className="grid grid-cols-1 md:grid-cols-3 mx-3 gap-x-3 gap-y-5 mt-6">
+        <div className="col-span-2 flex flex-col gap-y-3">
+          <div className="flex bg-white shadow-xl flex-col h-fit min-h-40 py-4 rounded-lg md:w-full w-[90%] mx-auto">
+            <div className="py-1 border-b mx-3 text-sm text-gray-800">
+              Created - 6 April,2023
+            </div>
+            <div className="pt-4 mx-4 text-sm text-gray-800">
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                sint soluta accusantium ipsam fugiat tempora quam delectus
+                molestiae rem tenetur.
+              </span>
+            </div>
+          </div>
+          <div className="bg-white rounded-xl shadow-xl px-4 py-3 md:w-full w-[90%] mx-auto">
+            <EditorComponent />
+          </div>
+        </div>
+        <TicketInfo />
       </div>
-      <button
-        onClick={saveEditorContent}
-        className="bg-gray-300 w-20 px-4 py-1.5 rounded-lg text-center float-right"
-      >
-        Save
-      </button>
-
-      {editorContent && (
-        <div dangerouslySetInnerHTML={{ __html: editorContent }} />
-      )}
     </Wrapper>
   );
 };
 
-export default EditorComponent;
+export default TicketDescription;
