@@ -27,6 +27,21 @@ const Revenue = () => {
               </div>
             </div>
           </div>
+          <div className="bg-white shadow-lg flex flex-row justify-center items-center p-4 rounded-xl gap-x-2 ml-6 md:ml-6 lg:ml-0">
+            <div className="p-4 rounded-full">
+              <img className="object-contain w-20" src={revenueIcon1} />
+            </div>
+            <div className="flex flex-col text-primary gap-y-2">
+              <h3 className="text-xl font-semibold">Today Revenue</h3>
+              <span className="text-2xl font-bold text-right">$23,000.22</span>
+              <div className="flex flex-row gap-x-4 justify-center items-center">
+                <div className="text-green-500 p-2 bg-green-100 rounded-full">
+                  <FaArrowUp size={12} />
+                </div>
+                <span className="text-gray-600 text-xs">4% (Yesterday)</span>
+              </div>
+            </div>
+          </div>
         </div>
       </Wrapper>
     </>
