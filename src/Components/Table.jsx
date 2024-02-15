@@ -3,13 +3,9 @@ import { IoMdArrowDropright } from "react-icons/io";
 import TableFooter from "../Components/TableFooter";
 import { BsThreeDots } from "react-icons/bs";
 import { IoMdPrint } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 const Table = ({ tableRows, tableData }) => {
-  const [selectedRow, setSelectedRow] = useState(null);
-
-  const handleRowClick = (id) => {
-    setSelectedRow(id === selectedRow ? null : id);
-  };
-
+  const navigate = useNavigate();
   return (
     <>
       <div className="overflow-x-auto bg-white rounded-md mx-5 lg:mx-0">
@@ -43,48 +39,12 @@ const Table = ({ tableRows, tableData }) => {
                     <IoMdArrowDropright
                       size={22}
                       className="cursor-pointer"
-                      onClick={() => handleRowClick(item.userID)}
+                      onClick={() =>
+                        navigate("/registered-restaurants/register-restaurant")
+                      }
                     />
                   </td>
                 </tr>
-                {selectedRow === item.userID && (
-                  <tr className="text-center">
-                    <td colSpan="20" className="p-10">
-                      <table className="table-auto w-full h-full">
-                        <thead>
-                          <tr className="text-center border-b">
-                            <th className="px-4 py-2">#</th>
-                            <th className="px-4 py-2">SKU</th>
-                            <th className="px-4 py-2">NAME</th>
-                            <th className="px-4 py-2">PRICE</th>
-                            <th className="px-4 py-2">QTY</th>
-                            <th className="px-4 py-2 flex flex-row gap-x-2 justify-center items-center">
-                              <IoMdPrint className="cursor-pointer" />
-                              <span>PRINT</span>
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr className="text-center border-b">
-                            <td className="px-4 py-2"></td>
-                            <td className="px-4 py-2">{item.userID}</td>
-                            <td className="px-4 py-2">{item.restaurantName}</td>
-                            <td className="px-4 py-2">{item.location}</td>
-                            <td className="px-4 py-2">
-                              {item.registrationDate}
-                            </td>
-                            <td className="px-4 py-2 flex flex-row justify-center items-center">
-                              <BsThreeDots
-                                size={22}
-                                className="cursor-pointer "
-                              />
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </td>
-                  </tr>
-                )}
               </React.Fragment>
             ))}
           </tbody>
