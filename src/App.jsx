@@ -4,6 +4,7 @@ import Revenue from './Pages/Revenue'
 import SideBar from './Components/SideBar'
 import Navbar from './Components/Navbar'
 import './App.css'
+import Reg from './Pages/Reg'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
        <Navbar/>
       <Routes>
         <Route element={<Revenue />} path="/" />
+        <Route element={<Reg />} path="/reg" />
       </Routes>
     </Fragment>
   )

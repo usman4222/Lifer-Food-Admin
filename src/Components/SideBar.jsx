@@ -41,7 +41,7 @@ import {
               <li className=" text-[14px] relative w-full">
                 <NavLink
                   className="w-[70%] mx-auto flex flex-row justify-start items-center gap-x-3 hover:bg-linkBg hover:text-textActive p-2 rounded-md cursor-pointer transition-all duration-300"
-                  to={"/menu"}
+                  to={"/reg"}
                 >
                   <MdOutlineVerifiedUser size={18} />
                   <span> Reg Restaurants</span>
