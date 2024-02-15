@@ -2,7 +2,7 @@ import React from "react";
 
 const TicketInfo = () => {
   return (
-    <div className="bg-white shadow-xl rounded-xl flex flex-col h-fit ">
+    <div className="bg-white shadow-xl rounded-xl flex flex-col h-fit mx-5 md:mx-0">
       <div className="w-full text-white bg-textActive font-medium py-2 text-center rounded-t-xl">
         Ticekt Details
       </div>
