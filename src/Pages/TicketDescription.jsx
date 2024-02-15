@@ -2,12 +2,20 @@ import EditorComponent from "../Components/EditorComponent";
 import Wrapper from "../Components/Wrapper";
 import TicketInfo from "../Components/TicketInfo";
 import Head from "../Components/Head";
+import { FaArrowLeft } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 const TicketDescription = () => {
+  const navigate = useNavigate();
   return (
     <Wrapper>
       <Head
         heading={"Ticket Management"}
         para={"Admin Hub for Restaurant Requests"}
+      />
+      <FaArrowLeft
+        size={22}
+        className="text-textActive mt-2 ml-5 cursor-pointer"
+        onClick={() => navigate(-1)}
       />
       <div className="grid grid-cols-1 md:grid-cols-3 mx-3 gap-x-3 gap-y-5 mt-6">
         <div className="col-span-2 flex flex-col gap-y-3">

@@ -7,6 +7,7 @@ import "./App.css";
 import RegRestaurant from "./Pages/RegRestaurant";
 import EditRestaurant from "./Pages/EditRestaurant";
 import TicketDescription from "./Pages/TicketDescription";
+import Restaurants from "./Pages/Restaurants";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route element={<RegRestaurant />} path="/reg" />
         <Route element={<EditRestaurant />} path="/edit-restaurant" />
         <Route element={<TicketDescription />} path="/ticketdescription" />
+        <Route element={<Restaurants />} path="/restaurants" />
       </Routes>
     </Fragment>
   );
