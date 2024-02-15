@@ -4,7 +4,8 @@ import Revenue from './Pages/Revenue'
 import SideBar from './Components/SideBar'
 import Navbar from './Components/Navbar'
 import './App.css'
-import Reg from './Pages/Reg'
+import RegRestaurant from './Pages/RegRestaurant'
+import EditRestaurant from './Pages/EditRestaurant'
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
        <Navbar/>
       <Routes>
         <Route element={<Revenue />} path="/" />
-        <Route element={<Reg />} path="/reg" />
+        <Route element={<RegRestaurant />} path="/reg" />
+        <Route element={<EditRestaurant />} path="/edit-restaurant" />
       </Routes>
     </Fragment>
   )
