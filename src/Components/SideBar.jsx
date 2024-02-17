@@ -34,7 +34,7 @@ const SideBar = () => {
           <ul className="flex flex-col gap-y-2 w-full">
             <li className=" text-[14px] w-full relative">
               <NavLink
-                className=" w-[70%] mx-auto flex flex-row justify-start items-center gap-x-3  p-2 rounded-md cursor-pointer transition-all duration-300 hover:bg-linkBg hover:text-textActive"
+                className=" w-[70%] mx-auto flex flex-row justify-start items-center gap-x-3  p-2.5  rounded-md cursor-pointer transition-all duration-300 hover:bg-linkBg hover:text-textActive"
                 to={"/"}
               >
                 <LuLayoutDashboard size={18} />
@@ -50,31 +50,31 @@ const SideBar = () => {
                 <span>Revenue</span>
               </NavLink>
             </li>
-            <li className=" text-[14px] relative w-full">
+            <li className=" text-[14px] w-full relative">
               <NavLink
-                className="w-[70%] mx-auto flex flex-row justify-start items-center gap-x-3 hover:bg-linkBg hover:text-textActive p-2 rounded-md cursor-pointer transition-all duration-300"
-                to={"/er"}
-              >
-                <MdOutlineVerifiedUser size={18} />
-                <span> Reg Restaurants</span>
-              </NavLink>
-            </li>
-            <li className="  text-[14px] relative w-full ">
-              <NavLink
-                className="w-[70%] mx-auto flex flex-row justify-start items-center gap-x-3 p-2  rounded-md cursor-pointer transition-all duration-300 hover:bg-linkBg hover:text-textActive"
-                to={"/asas"}
+                className=" w-[70%] mx-auto flex flex-row justify-start items-center gap-x-3  p-2 rounded-md cursor-pointer transition-all duration-300 hover:bg-linkBg hover:text-textActive"
+                to={"/registered-restaurants"}
               >
                 <RiUserFollowLine size={18} />
-                <span>Reg Customers</span>
+                <span className="text-[12px]"> Reg Restaurants</span>
               </NavLink>
             </li>
             <li className=" text-[14px] w-full relative">
               <NavLink
                 className=" w-[70%] mx-auto flex flex-row justify-start items-center gap-x-3  p-2 rounded-md cursor-pointer transition-all duration-300 hover:bg-linkBg hover:text-textActive"
-                to={"/ticketdescription"}
+                to={"/registered-customers"}
+              >
+                <MdOutlineVerifiedUser size={18} />
+                <span className="text-[12px]"> Reg Customers</span>
+              </NavLink>
+            </li>
+            <li className=" text-[14px] w-full relative">
+              <NavLink
+                className=" w-[70%] mx-auto flex flex-row justify-start items-center gap-x-3  p-2 rounded-md cursor-pointer transition-all duration-300 hover:bg-linkBg hover:text-textActive"
+                to={"/ticket"}
               >
                 <BsTicketPerforated size={18} />
-                <span> Ticket Management</span>
+                <span className="text-[12px]"> Ticket Management</span>
               </NavLink>
             </li>
           </ul>

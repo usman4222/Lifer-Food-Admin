@@ -3,7 +3,6 @@ import Head from "../Components/Head";
 import SearchArea from "../Components/SearchArea";
 import Table from "../Components/Table";
 
-
 const RestaurantsComponent = () => {
   const tableRows = [
     "Display Picture",
@@ -32,7 +31,9 @@ const RestaurantsComponent = () => {
 
   return (
     <>
-      <SearchArea />
+      <div className="mx-5">
+        <SearchArea />
+      </div>
       <div className="w-full lg:pl-0 lg:pr-4 mt-2 md:pl-2 md:pr-2">
         <Table tableRows={tableRows} tableData={tableData} />
       </div>
