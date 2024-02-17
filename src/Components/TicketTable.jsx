@@ -1,6 +1,7 @@
 import { IoMdArrowDropdown } from "react-icons/io";
 import TableFooter from "./TableFooter";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const TableRow = () => {
   const [action, setAction] = useState(false);
@@ -59,8 +60,13 @@ const TableRow = () => {
           {action && (
             <div className="absolute top-8 left-0 bg-white shadow-[5px_5px_10px_5px_rgba(0,0,0,0.1)] px-4 py-2 rounded-md z-50">
               <div className="flex flex-col gap-y-2 justify-start items-start">
-                <span className="text-red-500 cursor-pointer">Delete</span>
-                <span className="text-green-500 cursor-pointer">Edit</span>
+                <NavLink
+                  className="cursor-pointer font-medium"
+                  to={"/ticket/ticket-description"}
+                >
+                  Reply
+                </NavLink>
+                <span className="font-medium cursor-pointer">Delete</span>
               </div>
             </div>
           )}
