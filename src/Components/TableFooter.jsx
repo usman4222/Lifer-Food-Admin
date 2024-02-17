@@ -3,13 +3,15 @@ import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
-const TableFooter = ({ ticket }) => {
+const TableFooter = ({ ticket, revenue }) => {
   return (
     <>
       <div
         className={`lg:px-4 px-2 py-3 flex justify-between items-center text-gray-500 text-sm border-t  bg-white mx-5 ${
           ticket && "mx-0 md:mx-0 md:mr-3.5"
-        }`}
+        }
+          ${revenue && "mx-0 md:mx-0"}
+        `}
       >
         <div className="flex justify-center items-center lg:gap-x-2 gap-x-2">
           <span>Showing</span>
