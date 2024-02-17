@@ -10,7 +10,6 @@ const RegRestaurant = () => {
   const shifter = () => {
     naviagte("/edit-restaurant");
   };
-  
 
   return (
     <>

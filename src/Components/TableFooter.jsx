@@ -3,26 +3,30 @@ import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
-const TableFooter = () => {
+const TableFooter = ({ ticket }) => {
   return (
     <>
-      <div className="lg:px-4 px-2 py-3 flex justify-between items-center rounded-br-lg rounded-bl-lg text-gray-500 text-sm border-t  bg-white mx-5 lg:mx-0">
+      <div
+        className={`lg:px-4 px-2 py-3 flex justify-between items-center text-gray-500 text-sm border-t  bg-white mx-5 ${
+          ticket && "mx-0 md:mx-0 md:mr-3.5"
+        }`}
+      >
         <div className="flex justify-center items-center lg:gap-x-2 gap-x-2">
-          <span className="pl-2">Showing</span>
+          <span>Showing</span>
           <select
             name="page"
             id="page"
-            className="lg:px-3 py-1 px-1 w-12 rounded-lg text-gray-800 bg-white border border-gray-200 outline-none"
+            className="lg:px-3 py-1 px-1 rounded-lg text-gray-800 bg-white border border-gray-200 outline-none"
           >
             <option value="1">1</option>
-            <option value="1">2</option>
-            <option value="1">3</option>
-            <option value="1">4</option>
-            <option value="1">5</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
           </select>
           <span>of 50</span>
         </div>
-        <div className="flex justify-center items-center gap-x-2 pr-2">
+        <div className="flex justify-center items-center gap-x-2">
           <div className="bg-body rounded-md p-1 lg:p-[10px] text-sm lg:text-[16px] cursor-pointer">
             <MdOutlineKeyboardArrowLeft />
           </div>
