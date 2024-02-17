@@ -8,6 +8,8 @@ const EditorComponent = () => {
     const content = window.tinymce.activeEditor.getContent();
     setEditorContent(content);
   };
+
+  
   return (
     <>
       <Editor

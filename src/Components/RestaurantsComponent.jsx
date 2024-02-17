@@ -2,6 +2,8 @@ import React from "react";
 import Head from "../Components/Head";
 import SearchArea from "../Components/SearchArea";
 import Table from "../Components/Table";
+
+
 const RestaurantsComponent = () => {
   const tableRows = [
     "Display Picture",

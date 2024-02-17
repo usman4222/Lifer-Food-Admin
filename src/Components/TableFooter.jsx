@@ -6,9 +6,9 @@ import {
 const TableFooter = () => {
   return (
     <>
-      <div className="lg:px-4 px-2 py-3 flex justify-between items-center text-gray-500 text-sm border-t  bg-white mx-5 lg:mx-0">
+      <div className="lg:px-4 px-2 py-3 flex justify-between items-center rounded-br-lg rounded-bl-lg text-gray-500 text-sm border-t  bg-white mx-5 lg:mx-0">
         <div className="flex justify-center items-center lg:gap-x-2 gap-x-2">
-          <span>Showing</span>
+          <span className="pl-2">Showing</span>
           <select
             name="page"
             id="page"
@@ -22,7 +22,7 @@ const TableFooter = () => {
           </select>
           <span>of 50</span>
         </div>
-        <div className="flex justify-center items-center gap-x-2">
+        <div className="flex justify-center items-center gap-x-2 pr-2">
           <div className="bg-body rounded-md p-1 lg:p-[10px] text-sm lg:text-[16px] cursor-pointer">
             <MdOutlineKeyboardArrowLeft />
           </div>
