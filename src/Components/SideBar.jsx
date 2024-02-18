@@ -50,15 +50,6 @@ const SideBar = () => {
                 <span>Revenue</span>
               </NavLink>
             </li>
-            <li className=" text-[14px] w-full relative">
-              <NavLink
-                className=" w-[70%] mx-auto flex flex-row justify-start items-center gap-x-3  p-2 rounded-md cursor-pointer transition-all duration-300 hover:bg-linkBg hover:text-textActive"
-                to={"/ticketdescription"}
-              >
-                <BsTicketPerforated size={18} />
-                <span> Ticket Management</span>
-              </NavLink>
-            </li>
             <li className=" text-[14px] relative w-full">
               <NavLink
                 className="w-[70%] mx-auto flex flex-row justify-start items-center gap-x-3 hover:bg-linkBg hover:text-textActive p-2 rounded-md cursor-pointer transition-all duration-300"
@@ -75,6 +66,15 @@ const SideBar = () => {
               >
                 <RiUserFollowLine size={18} />
                 <span>Reg Customers</span>
+              </NavLink>
+            </li>
+            <li className=" text-[14px] w-full relative">
+              <NavLink
+                className=" w-[70%] mx-auto flex flex-row justify-start items-center gap-x-3  p-2 rounded-md cursor-pointer transition-all duration-300 hover:bg-linkBg hover:text-textActive"
+                to={"/ticketdescription"}
+              >
+                <BsTicketPerforated size={18} />
+                <span> Ticket Management</span>
               </NavLink>
             </li>
           </ul>
