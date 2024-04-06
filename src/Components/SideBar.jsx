@@ -8,7 +8,7 @@ import { FiClock } from "react-icons/fi";
 import { TfiWallet } from "react-icons/tfi";
 import { MdOutlineContactSupport } from "react-icons/md";
 import { NavLink, useNavigate } from "react-router-dom";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/admin.png";
 import { BsTicketPerforated } from "react-icons/bs";
 import { MdOutlineVerifiedUser } from "react-icons/md";
 import { RiUserFollowLine } from "react-icons/ri";

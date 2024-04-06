@@ -12,12 +12,12 @@ const Dashboard = () => {
         <>
             <Wrapper>
                 <Head heading={"Dashboard"} para={"Registration Updates!"} />
-                <div className=" lg:ml-5 lg:grid lg:grid-cols-12 mr-6 mt-5 gap-x-2 lg:px-0 gap-y-5 lg:pr-10">
+                <div className=" lg:ml-5 grid grid-cols-12 mr-6 mt-5 gap-x-2 lg:px-0 gap-y-5 lg:pr-10">
                     <div className="bg-white col-span-12 md:col-span-6 lg:col-span-4 mt-6 lg:mt-6 shadow-lg  flex flex-row justify-center items-center rounded-xl py-10 gap-x-6 ml-6 md:ml-6 lg:ml-0">
                         <div>
                             <div className="bg-[#FFF4D9] p-4 rounded-full	">
                                 <div className="flex justify-center items-center">
-                                    <LuUsers2 className="text-[#FFB100]" size={42} />
+                                    <LuUsers2 className="text-[#F58201]" size={42} />
                                 </div>
                             </div>
                         </div>
@@ -32,7 +32,7 @@ const Dashboard = () => {
                         <div>
                             <div className="bg-[#FFF4D9] p-4 rounded-full	">
                                 <div className="flex justify-center items-center">
-                                    <LuUsers2 className="text-[#FFB100]" size={42} />
+                                    <LuUsers2 className="text-[#F58201]" size={42} />
                                 </div>
                             </div>
                         </div>
@@ -49,13 +49,13 @@ const Dashboard = () => {
                         </div>
                         <div className="flex flex-row justify-center items-center pt-4 gap-x-12">
                             <div>
-                                <div>
-                                    <span className="text-[#FFB100] text-sm font-bold">New Tickets</span>
+                                <div className="pb-5 lg:pb-0">
+                                    <span className="text-[#F58201] text-sm font-bold">New Tickets</span>
                                     <h3 className="text-center font-bold text-2xl pt-3 text-[#464255] pb-5 md:pb-0">21</h3>
                                 </div>
                             </div>
                             <div className="flex justify-center items-center">
-                                <div>
+                                <div className="pb-5 lg:pb-0">
                                     <span className="text-[#EA985B] text-sm font-bold">Pending Tickets</span>
                                     <h3 className="text-center font-bold text-2xl pt-3 text-[#464255] pb-5 md:pb-0">29</h3>
                                 </div>
@@ -75,7 +75,7 @@ const Dashboard = () => {
                         <div className="bg-white p-5 md:px-14 lg:px-0 rounded-lg shadow-lg">
                             <div>
                                 <h5 className="font-extrabold	text-[#464255] text-lg pb-2 text-center md:pt-5 lg:pt-0">Sales Today</h5>
-                                <h6 className="text-[#FFB100] font-bold text-lg text-center pb-2">Premium</h6>
+                                <h6 className="text-[#F58201] font-bold text-lg text-center pb-2">Premium</h6>
                                 <div className="pt-2">
                                     <div>
                                         <h3 className="text-[#464255] text-3xl text-center font-extrabold pb-5">29</h3>

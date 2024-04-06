@@ -38,7 +38,7 @@ const Navbar = ({ toggleChat, toggleNotification }) => {
         />
         <div>
           <Link to="/login">
-            <button className="bg-[#FFB100] px-3 py-2 rounded-lg text-white text-sm">Login</button>
+            <button className="bg-[#F58201] px-3 py-2 rounded-lg text-white text-sm">Log In</button>
           </Link>
         </div>
         <div

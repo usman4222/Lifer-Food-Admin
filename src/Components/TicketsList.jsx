@@ -7,7 +7,7 @@ const TicketsList = () => {
   return (
     <>
       <div className="mt-[75px]">
-        <div className="bg-white flex flex-col p-2 rounded-lg gap-y-3">
+        <div className="bg-white flex flex-col p-4 rounded-lg gap-y-3">
           <div className="flex flex-row justify-between items-center text-gray-800 text-sm">
             <span>New Restaurants</span>
             <FaArrowRight
@@ -25,8 +25,8 @@ const TicketsList = () => {
             </div>
             <div className="flex flex-col text-gray-600 justify-center items-start">
               <span className="text-lg">McDonalds</span>
-              <span className="text-xs">#8930</span>
-              <span className="flex flex-row text-xs justify-center items-center">
+              <span className="text-xs py-1">#8930</span>
+              <span className="flex flex-row text-xs justify-center ">
                 <CiLocationOn />
                 <span> Khayabane Sadiq phase 4 Sargodha , Pakistan </span>
               </span>
@@ -42,8 +42,8 @@ const TicketsList = () => {
             </div>
             <div className="flex flex-col text-gray-600 justify-center items-start">
               <span className="text-lg">McDonalds</span>
-              <span className="text-xs">#8930</span>
-              <span className="flex flex-row text-xs justify-center items-center">
+              <span className="text-xs py-1">#8930</span>
+              <span className="flex flex-row text-xs justify-center ">
                 <CiLocationOn />
                 <span> Khayabane Sadiq phase 4 Sargodha , Pakistan </span>
               </span>
@@ -59,8 +59,8 @@ const TicketsList = () => {
             </div>
             <div className="flex flex-col text-gray-600 justify-center items-start">
               <span className="text-lg">McDonalds</span>
-              <span className="text-xs">#8930</span>
-              <span className="flex flex-row text-xs justify-center items-center">
+              <span className="text-xs py-1">#8930</span>
+              <span className="flex flex-row text-xs justify-center ">
                 <CiLocationOn />
                 <span> Khayabane Sadiq phase 4 Sargodha , Pakistan </span>
               </span>

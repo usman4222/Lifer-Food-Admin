@@ -1,5 +1,5 @@
 .active {
-  color: #ffb100;
+  color: #F58201;
   background-color: #fff4d9;
   font-weight: 600;
 }
@@ -10,14 +10,14 @@
   content: "";
   width: 4px;
   height: 35px;
-  background-color: #ffb100;
+  background-color: #F58201;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
 .page-active {
   color: white;
-  background-color: #ffb100;
+  background-color: #F58201;
   box-shadow: 1px 1px 4px rgb(70, 66, 85, 0.3);
   font-weight: 600;
 }

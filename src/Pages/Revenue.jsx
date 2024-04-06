@@ -70,7 +70,7 @@ const Revenue = () => {
             <div className="flex items-center justify-between">
               <div className="px-3 md:px-10">
                 <div>
-                  <h6 className="text-center text-[#FFB100] bold">Premium</h6>
+                  <h6 className="text-center text-[#F58201] bold">Premium</h6>
                   <h5 className="text-center py-3 text-[#464255]">29</h5>
                 </div>
                 <div className="flex justify-center items-center pb-5">
@@ -139,7 +139,7 @@ const Revenue = () => {
                         <td className="px-4 py-2 text-xs md:text-sm">
                           {item.userID}
                         </td>
-                        <td className="px-4 py-2 text-[#FFB100] text-xs md:text-sm">
+                        <td className="px-4 py-2 text-[#F58201] text-xs md:text-sm">
                           {item.location}
                         </td>
                         <td className="px-4 py-2 text-xs md:text-sm">

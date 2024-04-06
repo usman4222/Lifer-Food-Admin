@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
 import Wrapper from '../Components/Wrapper';
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/admin.png'
 
 const Login = () => {
     return (
@@ -43,7 +43,7 @@ const Login = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='bg-[#FBC252] flex justify-center py-2 mb-8 text-white rounded-md cursor-pointer'>
+                        <div className='bg-[#F58201] flex justify-center py-2 mb-8 text-white rounded-md cursor-pointer'>
                             <button>Login</button>
                         </div>
                         <div className='mb-10'>

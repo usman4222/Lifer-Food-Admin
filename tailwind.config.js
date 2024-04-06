@@ -13,10 +13,10 @@ export default {
         'body': '#f3f2f7',
         'main': '#464255',
         'linkBg': '#fff4d9',
-        'primary': '#ffb100'
+        'primary': '#F58201'
       },
       colors: {
-        'textActive': '#ffb100',
+        'textActive': '#F58201',
         'primary': '#464255'
       }
     },
