@@ -18,7 +18,7 @@
     "Revenue": "Revenue",
     "Track your Earnings": "Track your Earnings",
     "Revenue Today": "Revenue Today",
-    "vs last 7 days" : "vs last 7 days",
+    "vs last 7 days": "vs last 7 days",
     "Transaction": "Transaction",
     "Total Revenue": "Total Revenue",
     "Total Purchase": "Total Purchase",
@@ -65,5 +65,10 @@
     "Last 7 Days": "Last 7 Days",
     "Last 30 Days": "Last 30 Days",
     "Last 90 Days": "Last 90 Days",
-    "Last 365 Days": "Last 365 Days"
+    "Last 365 Days": "Last 365 Days",
+    "displayPicture": "Display Picture",
+    "restaurantName": "Restaurant Name",
+    "userID": "User ID",
+    "location": "Location",
+    "registrationDate": "Registration Date"
 }

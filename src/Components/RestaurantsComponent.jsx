@@ -2,14 +2,15 @@ import React from "react";
 import Head from "../Components/Head";
 import SearchArea from "../Components/SearchArea";
 import Table from "../Components/Table";
+import { FormattedMessage } from "react-intl"
 
 const RestaurantsComponent = () => {
   const tableRows = [
-    "Display Picture",
-    "Restaurant Name",
-    "User ID",
-    "Location",
-    "Registration Date",
+    "displayPicture",
+    "restaurantName",
+    "userID",
+    "location",
+    "registrationDate",
   ];
 
   const tableData = [
@@ -35,7 +36,12 @@ const RestaurantsComponent = () => {
         <SearchArea />
       </div>
       <div className="w-full lg:pl-0 lg:pr-4 mt-2 md:pl-2 md:pr-2">
-        <Table tableRows={tableRows} tableData={tableData} />
+        <Table
+          tableRows={tableRows.map(key => (
+            <FormattedMessage id={key} key={key} defaultMessage={key} />
+          ))}
+          tableData={tableData}
+        />
       </div>
     </>
   );

@@ -65,5 +65,10 @@
     "Last 7 Days": "Letzten 7 Tage",
     "Last 30 Days": "Letzten 30 Tage",
     "Last 90 Days": "Letzten 90 Tage",
-    "Last 365 Days": "Letzten 365 Tage"
+    "Last 365 Days": "Letzten 365 Tage",
+    "displayPicture": "Profilbild",
+    "restaurantName": "Restaurantname",
+    "userID": "Benutzer-ID",
+    "location": "Ort",
+    "registrationDate": "Registrierungsdatum"
 }

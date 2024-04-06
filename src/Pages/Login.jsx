@@ -45,7 +45,7 @@ const Login = () => {
                             </div>
                         </div>
                         <div className='bg-[#F58201] flex justify-center py-2 mb-8 text-white rounded-md cursor-pointer'>
-                            <button>Login</button>
+                            <button><FormattedMessage id="Login"/></button>
                         </div>
                         <div className='mb-10'>
                             <h6 className='text-center text-sm text-[#464255] cursor-pointer'><FormattedMessage id="Forgot Your Password?"/></h6>

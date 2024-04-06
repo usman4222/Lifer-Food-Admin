@@ -56,7 +56,7 @@ const Navbar = ({ locale, changeLocale }) => {
         />
         <div>
           <Link to="/login">
-            <button className="bg-[#F58201] px-3 py-2 rounded-lg text-white text-sm">Log In</button>
+            <button className="bg-[#F58201] px-3 py-2 rounded-lg text-white text-sm"><FormattedMessage id="Login"/></button>
           </Link>
         </div>
         <div
