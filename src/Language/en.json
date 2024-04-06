@@ -21,5 +21,19 @@
     "vs last 7 days" : "vs last 7 days",
     "Transaction": "Transaction",
     "Total Revenue": "Total Revenue",
-    "Total Purchase": "Total Purchase"
+    "Total Purchase": "Total Purchase",
+    "Registered Restaurants": "Registered Restaurants",
+    "Centralizing Control of Restaurant Management": "Centralizing Control of Restaurant Management",
+    "Registered Customers": "Registered Customers",
+    "Centralizing Control of Customer Management": "Centralizing Control of Customer Management",
+    "Admin Hub for Restaurant Requests": "Admin Hub for Restaurant Requests",
+    "Recent Tickets": "Recent Tickets",
+    "Transaction Invoice": "Transaction Invoice",
+    "Restaurant Name": "Restaurant Name",
+    "User ID:": "User ID:",
+    "Package": "Package",
+    "Registration Date:": "Registration Date:",
+    "Total Amount:": "Total Amount:",
+    "Payment Status": "Payment Status",
+    "Message": "Message"
 }

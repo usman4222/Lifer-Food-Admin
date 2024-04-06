@@ -6,6 +6,7 @@ import RecentTickets from "../Components/RecentTickets";
 import { animated, useSpring } from "@react-spring/web";
 import { Routes, Route } from "react-router-dom";
 import TicketDescription from "../Pages/TicketDescription";
+import { FormattedMessage } from "react-intl";
 
 const MainPage = () => {
   const springs = useSpring({
@@ -18,8 +19,8 @@ const MainPage = () => {
       <Wrapper>
         <div className="flex flex-col">
           <Head
-            heading={"Ticket Management"}
-            para={"Admin Hub for Restaurants Requests"}
+            heading={<FormattedMessage id="Ticket Management"/>}
+            para={<FormattedMessage id="Admin Hub for Restaurant Requests"/>}
           />
           <TicektCard />
         </div>

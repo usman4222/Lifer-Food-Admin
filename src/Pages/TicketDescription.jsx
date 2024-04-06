@@ -4,13 +4,15 @@ import TicketInfo from "../Components/TicketInfo";
 import Head from "../Components/Head";
 import { FaArrowLeft } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
+
 const TicketDescription = () => {
   const navigate = useNavigate();
   return (
     <Wrapper>
       <Head
-        heading={"Ticket Management"}
-        para={"Admin Hub for Restaurant Requests"}
+        heading={<FormattedMessage id="Ticket Management"/>}
+        para={<FormattedMessage id="Admin Hub for Restaurant Requests"/>}
       />
       <FaArrowLeft
         size={22}
