@@ -3,6 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
 import Wrapper from '../Components/Wrapper';
 import logo from '../assets/images/admin.png'
+import { FormattedMessage } from 'react-intl';
 
 const Login = () => {
     return (
@@ -14,8 +15,8 @@ const Login = () => {
                             <img className='object-contain w-40' src={logo} />
                         </div>
                         <div>
-                            <h3 className='text-[#464255] text-lg font-bold py-2'>Login</h3>
-                            <p  className='text-[#464255] text-sm pb-8'>Please fill your information bellow</p>
+                            <h3 className='text-[#464255] text-lg font-bold py-2'><FormattedMessage id="Login"/></h3>
+                            <p  className='text-[#464255] text-sm pb-8'><FormattedMessage id="Please fill your information bellow"/></p>
                         </div>
                         <div>
                             <div>
@@ -47,7 +48,7 @@ const Login = () => {
                             <button>Login</button>
                         </div>
                         <div className='mb-10'>
-                            <h6 className='text-center text-sm text-[#464255] cursor-pointer'>Forgot Your Password?</h6>
+                            <h6 className='text-center text-sm text-[#464255] cursor-pointer'><FormattedMessage id="Forgot Your Password?"/></h6>
                         </div>
                     </div>
                 </div>

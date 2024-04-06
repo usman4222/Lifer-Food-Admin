@@ -3,6 +3,7 @@ import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
+import { FormattedMessage } from "react-intl";
 const TableFooter = ({ ticket, revenue }) => {
   return (
     <>
@@ -14,7 +15,7 @@ const TableFooter = ({ ticket, revenue }) => {
         `}
       >
         <div className="flex justify-center items-center lg:gap-x-2 gap-x-2">
-          <span>Showing</span>
+          <span><FormattedMessage id="Showing"/></span>
           <select
             name="page"
             id="page"

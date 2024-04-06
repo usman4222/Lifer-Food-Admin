@@ -2,6 +2,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import TableFooter from "./TableFooter";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
 
 const TableRow = () => {
   const [action, setAction] = useState(false);
@@ -37,14 +38,14 @@ const TableRow = () => {
             className="font-medium flex flex-row cursor-pointer"
             onClick={toggleNew}
           >
-            New
+            <FormattedMessage id="New"/>
             <IoMdArrowDropdown size={20} />
           </span>
           {newToggle && (
             <div className="absolute top-8 left-0 bg-white shadow-[5px_5px_10px_5px_rgba(0,0,0,0.1)] px-4 py-2 rounded-md z-50">
               <div className="flex flex-col gap-y-2">
-                <span className="text-red-500 cursor-pointer">Pending</span>
-                <span className="text-green-500 cursor-pointer">Resolved</span>
+                <span className="text-red-500 cursor-pointer"><FormattedMessage id="Pending"/></span>
+                <span className="text-green-500 cursor-pointer"><FormattedMessage id="Resolved"/></span>
               </div>
             </div>
           )}
@@ -54,7 +55,7 @@ const TableRow = () => {
             className="font-medium flex flex-row cursor-pointer"
             onClick={toggleAction}
           >
-            Action
+            <FormattedMessage id="Action"/>
             <IoMdArrowDropdown size={20} className="cursor-pointer" />
           </span>
           {action && (
@@ -64,9 +65,9 @@ const TableRow = () => {
                   className="cursor-pointer font-medium"
                   to={"/ticket/ticket-description"}
                 >
-                  Reply
+                  <FormattedMessage id="Reply"/>
                 </NavLink>
-                <span className="font-medium cursor-pointer">Delete</span>
+                <span className="font-medium cursor-pointer"><FormattedMessage id="Delete"/></span>
               </div>
             </div>
           )}
@@ -84,14 +85,14 @@ const TicketTable = () => {
           <table className="table-auto min-w-full">
             <thead>
               <tr className="text-center border-b">
-                <th className="px-4 py-2 text-gray-500 text-xs">TICKET ID</th>
+                <th className="px-4 py-2 text-gray-500 text-xs"><FormattedMessage id="TICKET ID"/></th>
                 <th className="px-4 py-2 text-gray-500 text-xs">
-                  RESTAURANT NAME
+                  <FormattedMessage id="RESTAURANT NAME"/>
                 </th>
                 <th className="px-4 py-2 text-gray-500 text-xs">EMAIL</th>
-                <th className="px-4 py-2 text-gray-500 text-xs">DATE</th>
-                <th className="px-4 py-2 text-gray-500 text-xs">MESSAGE</th>
-                <th className="px-4 py-2 text-gray-500 text-xs">STATUS</th>
+                <th className="px-4 py-2 text-gray-500 text-xs"><FormattedMessage id="DATE"/></th>
+                <th className="px-4 py-2 text-gray-500 text-xs"><FormattedMessage id="MESSAGE"/></th>
+                <th className="px-4 py-2 text-gray-500 text-xs"><FormattedMessage id="STATUS"/></th>
               </tr>
             </thead>
             <tbody>

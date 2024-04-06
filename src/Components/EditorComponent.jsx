@@ -1,5 +1,6 @@
 import { Editor } from "@tinymce/tinymce-react";
 import { useState } from "react";
+import { FormattedMessage } from "react-intl";
 
 const EditorComponent = () => {
   const [editorContent, setEditorContent] = useState("");
@@ -29,17 +30,17 @@ const EditorComponent = () => {
       />
       <div className="flex flex-row justify-between items-center mt-2">
         <div className="flex flex-row justify-center items-center gap-x-3">
-          <span className="text-gray-800 ">Status</span>
+          <span className="text-gray-800 "><FormattedMessage id="Status"/></span>
           <div>
             <input type="radio" name="status" />
             <label htmlFor="status" className="text-gray-700 text-sm ml-1">
-              Pending
+              <FormattedMessage id="Pending"/>
             </label>
           </div>
           <div>
             <input type="radio" name="status" />
             <label htmlFor="status" className="text-gray-700 text-sm ml-1">
-              Resolved
+              <FormattedMessage id="Resolved"/>
             </label>
           </div>
         </div>
@@ -47,7 +48,7 @@ const EditorComponent = () => {
           className="px-5 py-1 bg-textActive text-white rounded-md"
           onClick={saveEditorContent}
         >
-          Reply
+          <FormattedMessage id="Reply"/>
         </button>
       </div>
     </>

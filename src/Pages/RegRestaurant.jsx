@@ -3,6 +3,7 @@ import { TiEdit } from "react-icons/ti";
 import { LuPause } from "react-icons/lu";
 import { useNavigate } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa6";
+import { FormattedMessage } from "react-intl";
 
 const RegRestaurant = () => {
   const naviagte = useNavigate();
@@ -31,15 +32,15 @@ const RegRestaurant = () => {
             </div>
             <div>
               <div className="flex flex-col pb-5 ">
-                <span className="text-yellow-500">User ID</span>
+                <span className="text-yellow-500"><FormattedMessage id="User ID"/></span>
                 <span className="text-gray-800">#34347</span>
               </div>
               <div className="flex flex-col pb-5">
-                <span className="text-yellow-500">Registration Date: </span>
+                <span className="text-yellow-500"><FormattedMessage id="Registration Date:"/> </span>
                 <span className="text-gray-800">02/09/2024 15:45 </span>
               </div>
               <div className="flex flex-col pb-5">
-                <span className="text-yellow-500">Location:</span>
+                <span className="text-yellow-500"><FormattedMessage id="Location:"/></span>
                 <span className="text-gray-800">
                   3M6J+WWP, Sargodha, Punjab, Pakistan
                 </span>
@@ -52,13 +53,13 @@ const RegRestaurant = () => {
                   <span className="px-2 pt-1 text-white">
                     <TiEdit />
                   </span>
-                  <button className="text-white">Edit</button>
+                  <button className="text-white"><FormattedMessage id="Edit"/></button>
                 </div>
                 <div className="flex bg-yellow-400  px-6 py-1 rounded-lg shadow-2xl cursor-pointer">
                   <span className="px-2 pt-1 text-white">
                     <LuPause />
                   </span>
-                  <button className="text-white">Hold</button>
+                  <button className="text-white"><FormattedMessage id="Hold"/></button>
                 </div>
               </div>
             </div>

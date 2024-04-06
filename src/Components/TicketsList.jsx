@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
 import { useNavigate } from "react-router-dom";
+import { FormattedMessage} from "react-intl";
 const TicketsList = () => {
   const navigate = useNavigate();
   return (
@@ -9,7 +10,7 @@ const TicketsList = () => {
       <div className="mt-[75px]">
         <div className="bg-white flex flex-col p-4 rounded-lg gap-y-3">
           <div className="flex flex-row justify-between items-center text-gray-800 text-sm">
-            <span>New Restaurants</span>
+            <span><FormattedMessage id="New Restaurants"/></span>
             <FaArrowRight
               className="cursor-pointer"
               onClick={() => navigate("/registered-restaurants")}
