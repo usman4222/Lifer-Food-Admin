@@ -1,11 +1,17 @@
 import React, { useState } from "react";
-import { GoBell } from "react-icons/go";
-import { BiSolidMessageSquareDots } from "react-icons/bi";
 import { HiMiniBars3BottomLeft } from "react-icons/hi2";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import profile from '../assets/images/profile.png'
+import messages_en from '../Language/en.json';
+import messages_de from '../Language/de.json';
+import { IntlProvider, FormattedMessage } from 'react-intl'
 
-const Navbar = ({ toggleChat, toggleNotification }) => {
+const messages = {
+  en: messages_en,
+  de: messages_de,
+};
+
+const Navbar = ({ locale, changeLocale }) => {
   const handleSidebarToggle = () => {
     const sidebar = document.getElementById("sidebar");
     const overlay = document.getElementById("overlay");
@@ -24,11 +30,23 @@ const Navbar = ({ toggleChat, toggleNotification }) => {
   return (
     <>
       <div className="w-full flex flex-row px-10 lg:justify-end justify-between items-center md:gap-x-3 p-4">
+        <nav>
+          <select
+            className='rounded-full px-2 py-3 border-textActive focus:outline-none focus:ring-0 focus:border-textActive'
+            value={locale}
+            onChange={(e) => changeLocale(e.target.value)}
+            aria-label="Select language"
+            id="language-select"
+          >
+            <option value="en">English</option>
+            <option value="de">German</option>
+          </select>
+        </nav>
         <div className="lg:hidden bg-linkBg p-2 rounded-lg text-textActive cursor-pointer">
           <HiMiniBars3BottomLeft size={20} onClick={handleSidebarToggle} />
         </div>
         <div className="text-primary hidden md:block">
-          <span className="text-[15px]">Welcome,{"   "}</span>
+          <span className="text-[15px]"><FormattedMessage id="welcome" />,{"   "}</span>
           <span className="font-semibold">Admin1</span>
         </div>
         <img
