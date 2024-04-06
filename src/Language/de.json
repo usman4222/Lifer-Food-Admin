@@ -1,4 +1,7 @@
 {
     "dashboard": "Instrumententafel",
-    "welcome": "Willkommen"
+    "welcome": "Willkommen",
+    "revenue": "Einnahmen",
+    "Reg Customers": "Reg-Kunden",
+    "Ticket Management": "Ticketverwaltung"
 }

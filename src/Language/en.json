@@ -1,4 +1,7 @@
 {
-    "dashboard": "dashboard",
-    "welcome": "welcome"
+    "dashboard": "Dashboard",
+    "welcome": "welcome",
+    "revenue": "Revenue",
+    "Reg Customers": "Reg Customers",
+    "Ticket Management": "Ticket Management"
 }

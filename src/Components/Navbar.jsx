@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import profile from '../assets/images/profile.png'
 import messages_en from '../Language/en.json';
 import messages_de from '../Language/de.json';
-import { IntlProvider, FormattedMessage } from 'react-intl'
+import { FormattedMessage } from 'react-intl'
 
 const messages = {
   en: messages_en,

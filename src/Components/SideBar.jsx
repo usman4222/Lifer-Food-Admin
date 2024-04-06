@@ -14,6 +14,7 @@ import { MdOutlineVerifiedUser } from "react-icons/md";
 import { RiUserFollowLine } from "react-icons/ri";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { PiMoneyFill } from "react-icons/pi";
+import { FormattedMessage } from 'react-intl'
 
 const SideBar = () => {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ const SideBar = () => {
                 to={"/"}
               >
                 <LuLayoutDashboard size={18} />
-                <span>Dashboard</span>
+                <span><FormattedMessage id="dashboard"/></span>
               </NavLink>
             </li>
             <li className=" text-[14px] w-full relative">
@@ -47,7 +48,7 @@ const SideBar = () => {
                 to={"/revenue"}
               >
                 <PiMoneyFill size={18} />
-                <span>Revenue</span>
+                <span><FormattedMessage id="revenue"/></span>
               </NavLink>
             </li>
             <li className=" text-[14px] w-full relative">
@@ -65,7 +66,7 @@ const SideBar = () => {
                 to={"/registered-customers"}
               >
                 <MdOutlineVerifiedUser size={18} />
-                <span className="text-[12px]"> Reg Customers</span>
+                <span className="text-[12px]"><FormattedMessage id="Reg Customers"/></span>
               </NavLink>
             </li>
             <li className=" text-[14px] w-full relative">
@@ -74,7 +75,7 @@ const SideBar = () => {
                 to={"/ticket"}
               >
                 <BsTicketPerforated size={18} />
-                <span className="text-[12px]"> Ticket Management</span>
+                <span className="text-[12px]"> <FormattedMessage id="Ticket Management"/></span>
               </NavLink>
             </li>
           </ul>
