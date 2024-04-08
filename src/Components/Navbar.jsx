@@ -32,7 +32,7 @@ const Navbar = ({ locale, changeLocale }) => {
       <div className="w-full flex flex-row px-10 lg:justify-end justify-between items-center md:gap-x-3 p-4">
         <nav>
           <select
-            className='rounded-full px-2 py-3 border-textActive focus:outline-none focus:ring-0 focus:border-textActive'
+            className='rounded-full px-3 py-3 border-textActive focus:outline-none focus:ring-0 focus:border-textActive'
             value={locale}
             onChange={(e) => changeLocale(e.target.value)}
             aria-label="Select language"
