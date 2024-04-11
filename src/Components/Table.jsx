@@ -76,7 +76,7 @@ const Table = ({ tableRows, tableData, delIcon }) => {
                       )}
                     </td>
                     <td className="px-4 py-2">
-                      {delIcon && <span>1294843</span>}
+                      {delIcon && <span>1294343</span>}
                     </td>
                     <td className="px-4 py-2">
                       {delIcon ? (
